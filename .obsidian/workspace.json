@@ -8,35 +8,16 @@
         "type": "tabs",
         "children": [
           {
-            "id": "ef311d7fcefbf021",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "00_foundations/1_what_is_ai.md.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "1_what_is_ai.md"
-            }
-          },
-          {
             "id": "026b4f26337079a3",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "00_foundations/2_prompt_engineering_basics.md.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "2_prompt_engineering_basics.md"
+              "title": "Nova aba"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -109,7 +90,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "00_foundations/2_prompt_engineering_basics.md.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -119,7 +99,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Links inversos para 2_prompt_engineering_basics.md"
+              "title": "Links inversos"
             }
           },
           {
@@ -128,12 +108,11 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "00_foundations/2_prompt_engineering_basics.md.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Links de saída para 2_prompt_engineering_basics.md"
+              "title": "Links de saída"
             }
           },
           {
@@ -171,13 +150,12 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "00_foundations/2_prompt_engineering_basics.md.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Sumário de 2_prompt_engineering_basics.md"
+              "title": "Sumário"
             }
           }
         ]
@@ -200,8 +178,13 @@
   },
   "active": "026b4f26337079a3",
   "lastOpenFiles": [
-    "00_foundations/1_what_is_ai.md.md",
+    "00_foundations/Examples/01_first_llm_call.py",
+    "00_foundations/Examples",
+    "Makefile",
+    "requirements.txt",
     "00_foundations/2_prompt_engineering_basics.md.md",
-    "00_foundations.md"
+    "00_foundations/1_what_is_ai.md.md",
+    "00_foundations.md",
+    "00_foundations/Sem título"
   ]
 }
