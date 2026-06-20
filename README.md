@@ -1,122 +1,121 @@
-# Causal AI for Healthcare
+## Running the Examples
 
-Research repository for a Master's Degree project focused on the application of Artificial Intelligence and Causal Inference techniques in healthcare data.
+This repository contains independent examples designed to demonstrate different Artificial Intelligence concepts.
 
-## Overview
+## Environment Variables
 
-Healthcare systems generate large volumes of structured and unstructured information, including clinical notes, diagnoses, treatments, laboratory results, and patient histories.
+Before running any example, create a `.env` file in the project root.
 
-While machine learning and Large Language Models (LLMs) can identify patterns and generate predictions, predictive performance alone does not establish causal relationships.
+Example:
 
-This project investigates how AI-based approaches can support the identification, extraction, representation, and analysis of clinically relevant information while exploring methods to distinguish predictive associations from potentially causal relationships.
-
----
-
-## Research Motivation
-
-Most AI systems in healthcare focus on prediction:
-
-* Risk prediction
-* Disease classification
-* Outcome forecasting
-* Clinical summarization
-
-However, healthcare decision-making often requires understanding:
-
-> What causes an outcome?
-
-rather than:
-
-> What predicts an outcome?
-
-This distinction motivates the exploration of causal inference techniques combined with modern AI systems.
-
----
-
-## Research Goals
-
-### Main Objective
-
-Investigate how Artificial Intelligence techniques can support causal analysis in healthcare data.
-
-### Supporting Objectives
-
-* Evaluate the use of LLMs for clinical information extraction.
-* Explore methods for structuring information from clinical records.
-* Investigate causal inference approaches applicable to healthcare datasets.
-* Compare predictive and causal perspectives in healthcare analysis.
-* Assess the strengths and limitations of AI-assisted causal workflows.
-
----
-
-## Repository Structure
-
-```text
-causal-ai-healthcare/
-
-├── 00_foundations/
-├── 01_research/
-├── 02_references/
-├── 03_data/
-├── 04_extraction/
-├── 05_causal_inference/
-├── 07_experiments/
-└── dissertation/
+```env
+OPENAI_API_KEY=sk-proj-xxxxxxxxxxxxxxxxxxxxxxxx
 ```
 
-### 00_foundations
+### Verify Configuration
 
-Foundational concepts and learning materials:
+You can verify that the API key is being loaded correctly by running:
 
-* Artificial Intelligence
-* Large Language Models
-* APIs
-* Tokens
-* Evaluation
-* Causal reasoning
+```bash
+make run-example
+```
 
-### 01_research
+If the API key is not configured correctly, you should see an error similar to:
 
-Research questions, objectives, hypotheses, methodology, and research notes.
+```text
+OPENAI_API_KEY not found. Check if the .env file exists in the project root.
+```
 
-### 02_references
+### Security Notes
 
-Books, papers, literature review notes, and bibliography.
+* Never commit your `.env` file to Git.
+* Never share your API key publicly.
+* Ensure `.env` is included in `.gitignore`.
 
-### 03_data
+Example `.gitignore`:
 
-Datasets, schemas, synthetic data, and data preparation workflows.
+```gitignore
+.env
+.venv/
+__pycache__/
+```
 
-### 04_extraction
 
-Experiments related to information extraction from clinical narratives and healthcare documents.
+### Option 1 – Run Examples Individually
 
-### 05_causal_inference
+Navigate to the desired example folder and execute the Python script.
 
-Materials related to causal analysis, DAGs, causal discovery methods, and causal effect estimation.
+Example:
 
-### 07_experiments
+```bash
+cd Examples
+python 01_first_llm_call.py
+```
 
-Experimental results, evaluations, and reproducible research artifacts.
-
-### dissertation
-
-Dissertation drafts, figures, tables, and supporting documents.
-
----
-
-## Current Status
-
-Project initialization and literature review.
-
-Research scope and methodology are currently under refinement.
+This approach is useful when exploring examples one at a time.
 
 ---
 
-## Author
+### Option 2 – Use Make Commands
 
-Hellen Ruthes
+The repository provides a Makefile to simplify setup and execution.
 
-Master's Degree Research Project
+Install dependencies:
 
-Federal University of Technology – Paraná (UTFPR)
+```bash
+make install
+```
+
+Run the first example:
+
+```bash
+make run-example
+```
+
+Using Make commands is recommended because it provides a consistent execution process across all examples.
+
+---
+
+### Environment Variables
+
+Before running any example, create a `.env` file in the project root.
+
+Example:
+
+```env
+OPENAI_API_KEY=your_api_key_here
+```
+
+The examples will automatically load the API key from this file.
+
+---
+
+### Recommended Workflow
+
+1. Clone the repository.
+2. Create a `.env` file.
+3. Run:
+
+```bash
+make install
+```
+
+4. Execute examples using either:
+
+```bash
+python <example_file>.py
+```
+
+or
+
+```bash
+make <target>
+```
+### Troubleshooting
+
+If an example fails:
+
+1. Verify that Python is installed.
+2. Verify that dependencies were installed.
+3. Verify that the `.env` file exists.
+4. Verify that the API key is valid.
