@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "00_foundations.md",
+                "file": "00_foundations/05_first_llm_applications.md.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "00_foundations"
+              "title": "05_first_llm_applications.md"
             }
           }
         ]
@@ -94,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "00_foundations.md",
+                "file": "00_foundations/05_first_llm_applications.md.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +104,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Links inversos para 00_foundations"
+              "title": "Links inversos para 05_first_llm_applications.md"
             }
           },
           {
@@ -113,12 +113,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "00_foundations.md",
+                "file": "00_foundations/05_first_llm_applications.md.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Links de saída para 00_foundations"
+              "title": "Links de saída para 05_first_llm_applications.md"
             }
           },
           {
@@ -156,13 +156,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "00_foundations.md",
+                "file": "00_foundations/05_first_llm_applications.md.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Sumário de 00_foundations"
+              "title": "Sumário de 05_first_llm_applications.md"
             }
           }
         ]
@@ -185,12 +185,20 @@
   },
   "active": "1d7b1d40712c58cc",
   "lastOpenFiles": [
+    "dockerfile",
+    "02_scripts/05_load_silver.py",
+    "02_scripts/04_create_silver_tables.py",
+    "03_data/raw_data/asclepius_clinical_notes_sample_100.json",
+    "03_data/raw_data",
+    "02_scripts/03_load_bronze.py",
+    "02_scripts/02_create_bronze_tables.py",
+    "02_scripts/01_download_asclepius.py",
+    "02_scripts",
+    "03_data/03_data/raw_data/asclepius_sample.csv",
+    "03_data/03_data/raw_data/asclepius_sample.json",
+    "00_foundations.md",
     "00_foundations/02_prompt_engineering_basics.md.md",
-    "requirements.txt",
-    "Makefile",
     "00_foundations/Examples/Sem título.md",
-    "00_foundations/Examples/01_first_llm_call.py",
-    "00_foundations/Examples",
     "00_foundations/09_vector_databases.md.md",
     "00_foundations/08_what_are_embeddings.md.md",
     "00_foundations/07_what_is_rag.md.md",
@@ -202,8 +210,6 @@
     "00_foundations/01_what_is_ai.md.md",
     "00_foundations/2_prompt_engineering_basics.md.md",
     "00_foundations/1_what_is_ai.md.md",
-    "00_foundations/metrics.md.md",
-    "00_foundations.md",
-    "00_foundations/Documentation"
+    "00_foundations/metrics.md.md"
   ]
 }

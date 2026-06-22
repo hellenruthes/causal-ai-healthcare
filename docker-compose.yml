@@ -1,0 +1,52 @@
+services:
+
+  postgres:
+    image: pgvector/pgvector:pg16
+    container_name: asclepius_postgres
+
+    environment:
+      POSTGRES_DB: asclepius
+      POSTGRES_USER: asclepius_user
+      POSTGRES_PASSWORD: asclepius_password
+
+    ports:
+      - "5434:5432"
+
+    volumes:
+      - asclepius_pgdata:/var/lib/postgresql/data
+
+    restart: unless-stopped
+
+  pgadmin:
+    image: dpage/pgadmin4
+    container_name: asclepius_pgadmin
+
+    environment:
+      PGADMIN_DEFAULT_EMAIL: admin@local.com
+      PGADMIN_DEFAULT_PASSWORD: admin
+
+    ports:
+      - "5051:80"
+
+    depends_on:
+      - postgres
+
+    restart: unless-stopped
+
+  loader:
+    build: .
+    container_name: asclepius_loader
+
+    working_dir: /app
+
+    volumes:
+      - .:/app
+
+    depends_on:
+      - postgres
+
+    environment:
+      DATABASE_URL: postgresql+psycopg2://asclepius_user:asclepius_password@postgres:5432/asclepius
+
+volumes:
+  asclepius_pgdata:
